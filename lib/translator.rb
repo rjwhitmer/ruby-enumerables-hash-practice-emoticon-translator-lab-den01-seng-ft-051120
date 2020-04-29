@@ -28,9 +28,9 @@ def get_japanese_emoticon(file, emote)
   search.each do |key, value|
     #binding.pry
     value.each do |k, v|
-      binding.pry
+      #binding.pry
       if emote == v
-        return v
+        return value[:japanese]
       end
     end
   end
